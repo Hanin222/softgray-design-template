@@ -1,0 +1,278 @@
+/********************************************
+*********************************************
+*********************************************
+            PUBLIC STYLES
+ ********************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #2d97e2;
+    --bg-color: #e5e5e5;
+    --global-padding: 30px;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222
+}
+
+.home-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+/********************************************
+*********************************************
+*********************************************
+            CUSTOM STYLES
+ ********************************************/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+/********************************************
+*********************************************
+*********************************************
+            HEADER STYLES
+ ********************************************/
+.page-header {
+    background-color: white;
+}
+
+.header-wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+}
+
+.page-header-end {
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+/********************************************
+*********************************************
+*********************************************
+         HOME   HEADER STYLES
+ ********************************************/
+
+
+
+.home-header {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-header-content {
+    width: 40%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home-header-title {
+    font-size: 2.7rem;
+    margin-bottom: 50px;
+
+}
+
+/********************************************
+*********************************************
+*********************************************
+            servivces STYLES
+ ********************************************/
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 0 0 22%;
+
+}
+
+.img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.services-header {
+    color: var(--main-color);
+    padding: 15px 0;
+    text-align: center;
+}
+
+/********************************************
+*********************************************
+*********************************************
+           ABOUT STYLES
+ ********************************************/
+.about-section {
+    background-color: #e5e5e5;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-img {
+    flex: 0 0 50%;
+}
+
+.about-img img {
+    border-radius: 32px;
+}
+
+.about-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.about-text {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.about-button {
+    background-color: #554c4c;
+    width: 200px;
+    /* height: 35px; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 2%;
+}
+
+/*********************************************
+             ABOUT SECTION CONTINUING
+  ***************************************/
+.picture-wrapper {
+    display: flex;
+    /* background-color: white; */
+}
+
+.picture-items {
+    background-color: white;
+    text-align: center;
+    /* border: #222 1px solid; */
+
+
+}
+
+.picture-header {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.picture-items :hover {
+    background-color: black;
+    color: white;
+}
+
+/********************************************
+*********************************************
+*********************************************
+           JOBS STYLES
+ ********************************************/
+.jobs-wrapper {
+    display: flex;
+    gap: 25px;
+}
+
+.jobs-head {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+
+}
+
+.job-items .jobs-title::after {
+    content: ' ';
+    height: 5px;
+    width: 95px;
+    background-color: #f6f6f6;
+    display: block;
+    margin-top: 8px;
+}
+
+.jobs-header {
+    color: var(--main-color);
+    padding: 10px;
+
+}
+
+.jobs-details {
+    background-color: white;
+}
+
+.jobs-text {
+    text-align: justify;
+    padding: 10px;
+    padding-bottom: 20px;
+
+}
+
+/********************************************
+*********************************************
+*********************************************
+           MEDIA CUERY STYLES
+ ********************************************/
+@media screen and (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    .call {
+        display: none;
+    }
+
+    .about-wrapper,
+    .services-item,
+    .jobs-wrapper,
+    .picture-wrapper {
+        flex-wrap: wrap;
+    }
+}
